@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { Container, Row, Col } from "react-bootstrap";
+import Tabs from "./components/Tabs";
+import { Button } from "react-bootstrap";
+library.add(fas, fab);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Header />
+      <section>
+        <Container fluid="md" className="sectionMain">
+          <Row>
+            <Col>
+              <Tabs />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </main>
   );
 }
 

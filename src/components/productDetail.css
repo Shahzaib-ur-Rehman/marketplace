@@ -1,4 +1,65 @@
 .ProductDetailImage {
   width: 400px;
-  height: 400px;
+  height: 350px;
+}
+.iconImage {
+  width: 40px;
+  height: 40px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: white;
+}
+.variantBtn {
+  background-color: #26272e !important;
+  border-color: #ffbe6a !important;
+  border-width: 1px !important;
+  width: 207px !important;
+  border-radius: 10px !important;
+  height: 45px !important;
+  color: #ffbe6a !important;
+  font-size: 18px !important;
+}
+.variantBtn:active {
+  background-color: unset !important;
+  box-shadow: unset !important;
+}
+.tradeBtn {
+  background-color: #4fb16b;
+  border-radius: 5px;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+}
+.tradeNumber {
+  padding: 10px 10px 10px 20px;
+}
+.arrowUpIcon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+.priceSection {
+  margin-top: 40px;
+}
+.vectorIcon {
+  width: 20px;
+  height: 20px;
+  padding-bottom: 2px;
+}
+.BuyNowBtn {
+  padding: 20px 10px;
+}
+
+.readMoreLink {
+  margin-right: 15%;
+  font-size: 18px;
+  color: #ffbe6a;
 }

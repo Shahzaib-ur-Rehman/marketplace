@@ -1,0 +1,8 @@
+.chartWrapper {
+  position: relative;
+}
+.chartBtns {
+  position: absolute !important;
+  top: 42px !important;
+  left: 60px !important;
+}

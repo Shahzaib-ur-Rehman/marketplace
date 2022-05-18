@@ -1,27 +1,37 @@
+.navbar {
+  background-color: #26272e;
+  border-bottom: 2px solid gray;
+  padding: 18px 10px !important;
+}
 .logo {
-  padding-left: 50px;
   color: white !important;
 }
 
 .headerSearch {
   position: relative;
-  margin-left: 200px;
 }
 .searchIcon {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 13px;
+  left: 15px;
 }
 .headerSearch input {
-  border-radius: 10px;
+  border-radius: 16px;
   padding-left: 30px;
-  min-width: 448px;
+  max-width: 200px;
   background-color: #363943;
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 0.475rem 2.5rem;
+}
+.headerSearch svg path {
+  fill: #e4e4e7;
 }
 .headerSearch input:focus {
   border: 2px solid #2563eb;
   background-color: #363943 !important;
   box-shadow: unset;
+  color: #fff;
   /* box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%); */
 }
 
@@ -56,7 +66,6 @@
 }
 .ProfileDropDownDiv {
   margin-left: auto;
-  padding-right: 50px;
   position: relative;
 }
 .ProfileButton {
@@ -70,4 +79,12 @@
 }
 .navbBarDropDown .dropdown-toggle {
   color: white !important;
+}
+@media (min-width: 992px) {
+  .headerSearch {
+    margin-left: 100px;
+  }
+  .headerSearch input {
+    min-width: 400px;
+  }
 }

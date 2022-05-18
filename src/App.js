@@ -14,10 +14,10 @@ function App() {
   return (
     <main className="main">
       <Header />
-      <section>
-        <Container fluid="md" className="sectionMain my-3">
+      <section class="sectionMain">
+        <Container fluid="lg" className="my-3">
           <Row>
-            <Col>
+            <Col class="px-0">
               <Tabs />
             </Col>
           </Row>

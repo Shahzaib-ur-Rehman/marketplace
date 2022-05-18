@@ -2,6 +2,7 @@ import { Button } from "react-bootstrap";
 import React from "react";
 import { Nav } from "react-bootstrap";
 import "./tabs.css";
+import { Link } from "react-router-dom";
 const Tabs = () => {
   return (
     <Nav variant="pills" className="tabs">
@@ -20,10 +21,11 @@ const Tabs = () => {
       <Nav.Item>
         <Nav.Link eventKey="link-1">Bot5</Nav.Link>
       </Nav.Item>
-
-      <Button variant="primary" className="newProductBtn">
-        New Products
-      </Button>
+      <Link to="/addNewProduct" className="newProductBtn">
+        <Button variant="primary" className="">
+          New Products
+        </Button>
+      </Link>
     </Nav>
   );
 };

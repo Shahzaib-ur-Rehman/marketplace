@@ -15,21 +15,26 @@ const ProductList = () => {
     <Fragment>
       {ProductList.map((product) => {
         return (
-          <Col className="g-5">
-            <Card style={{ width: "18rem" }}>
-              <Card.Img
-                variant="top"
-                className="img-fluid"
-                src={product.image}
-                height="250"
-              />
-              <Card.Body>
-                <Card.Title>{product.title}</Card.Title>
-                {/* <Card.Text>{product.description}</Card.Text> */}
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
+          <div className="col-md-6 col-lg-4 g-5">
+            <div class="card">
+              <div className="imgWrapper">
+                <Card.Img
+                  variant="top"
+                  src={product.image}
+                  height={250}
+                  width={350}
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{product.title}</h5>
+                <p class="card-text">{product.description}</p>
+                <div class="productType">
+                  <span className="smallProductType">Hot Sell</span>
+                  <span class="btnGo">Go SomeWhere</span>
+                </div>
+              </div>
+            </div>
+          </div>
         );
       })}
     </Fragment>

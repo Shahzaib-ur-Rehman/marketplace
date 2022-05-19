@@ -33,63 +33,65 @@ const RevenueShareSettings = () => {
     >
       {(formik) => {
         return (
-          <Form>
-            <Row>
-              <Col md={10} className="mb-3 mx-auto">
-                <FormControl
-                  control="input"
-                  name="assetName"
-                  placeholder="Asset Name"
-                  type="text"
-                  className="mb-3"
-                />
-              </Col>
-            </Row>
+          <div className="container-lg newForm">
+            <Form>
+              <Row>
+                <Col md={10} className="mb-3 mx-auto">
+                  <FormControl
+                    control="input"
+                    name="assetName"
+                    placeholder="Asset Name"
+                    type="text"
+                    className="mb-3"
+                  />
+                </Col>
+              </Row>
 
-            <Row>
-              <Col md={10} className="mb-3 mx-auto">
-                <FormControl
-                  control="textarea"
-                  name="assetDiscription"
-                  placeholder="Asset Discription"
-                  type="text"
-                  className="mb-3"
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col md={10} className="mb-3 mx-auto">
-                <FormControl
-                  control="input"
-                  name="assetPrice"
-                  placeholder="Asset Price in ETH"
-                  type="text"
-                  className="mb-3"
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col md={10} className="mb-3 mx-auto">
-                <FormControl
-                  control="input"
-                  name="roylaltyAmount"
-                  placeholder="Royalty Amount"
-                  type="number"
-                  className="mb-3"
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col md={4} className="">
-                <FormControl control="upload" name="fileUpload" />
-              </Col>
-            </Row>
-            <div className="d-flex justify-content-center">
-              <Button type="submit" className="addNewProductBtn">
-                CREATE DIGITIAL ASSET
-              </Button>
-            </div>
-          </Form>
+              <Row>
+                <Col md={10} className="mb-3 mx-auto">
+                  <FormControl
+                    control="textarea"
+                    name="assetDiscription"
+                    placeholder="Asset Discription"
+                    type="text"
+                    className="mb-3"
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col md={10} className="mb-3 mx-auto">
+                  <FormControl
+                    control="input"
+                    name="assetPrice"
+                    placeholder="Asset Price in ETH"
+                    type="text"
+                    className="mb-3"
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col md={10} className="mb-3 mx-auto">
+                  <FormControl
+                    control="input"
+                    name="roylaltyAmount"
+                    placeholder="Royalty Amount"
+                    type="number"
+                    className="mb-3"
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col md={4} className="">
+                  <FormControl control="upload" name="fileUpload" />
+                </Col>
+              </Row>
+              <div className="d-flex justify-content-center">
+                <Button type="submit" className="addNewProductBtn">
+                  CREATE DIGITIAL ASSET
+                </Button>
+              </div>
+            </Form>
+          </div>
         );
       }}
     </Formik>

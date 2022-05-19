@@ -1,10 +1,22 @@
 .ProductDetailImage {
-  width: 400px;
+  /* max-width: 400px; */
   height: 350px;
+  border-radius: 10px;
+}
+.heartImgWrapper {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5058;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 50%;
 }
 .iconImage {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 h1,
 h2,
@@ -46,20 +58,51 @@ span {
   top: auto;
   left: auto;
 }
-.priceSection {
-  margin-top: 40px;
-}
+
 .vectorIcon {
   width: 20px;
   height: 20px;
   padding-bottom: 2px;
-}
-.BuyNowBtn {
-  padding: 20px 10px;
 }
 
 .readMoreLink {
   margin-right: 15%;
   font-size: 18px;
   color: #ffbe6a;
+}
+
+.graphStyling {
+  background-color: #4d5058;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.customBtn {
+  background-color: #4d5058 !important;
+  border-radius: 10px !important;
+  color: white !important;
+  font-size: 18px !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  min-width: 120px;
+}
+.customBtn:hover {
+  color: #fff;
+}
+.BuyNowBtn {
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .BuyNowBtn {
+    padding: 20px 10px;
+  }
+}
+@media (min-width: 992px) {
+  .priceSection {
+    margin-top: 26px;
+  }
+  .BuyNowBtn {
+    padding: 20px 10px;
+  }
 }

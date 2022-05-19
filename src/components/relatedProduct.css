@@ -6,9 +6,9 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   min-height: 100vh;
   background: #26272e !important;
 }
@@ -25,12 +25,12 @@ img {
 }
 .container .card {
   position: relative;
-  width: 300px;
+  max-width: 300px;
   height: 520px;
   background: #fff;
   border-radius: 20px;
   overflow: hidden;
-  margin: 30px;
+  /* margin: 30px; */
 }
 .content-1 {
   position: relative;
@@ -209,6 +209,8 @@ img {
   background-color: #4d5058;
   border-radius: 10px;
   margin-top: 30px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 .card {
   border-radius: 15px !important;
@@ -272,6 +274,10 @@ img {
 }
 .card img {
   width: 100%;
-  max-height: 250px;
-  object-fit: fill;
+  min-height: 250px;
+}
+@media (min-width: 1200px) {
+  .sectionMain .row:nth-child(2) {
+    padding: 24px 0;
+  }
 }

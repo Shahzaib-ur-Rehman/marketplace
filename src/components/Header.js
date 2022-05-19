@@ -38,7 +38,7 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <div className="">
+            <div className="menuItems">
               <Button variant="dark" className="notificationButton">
                 <FontAwesomeIcon icon="fa-solid fa-bell" />
               </Button>

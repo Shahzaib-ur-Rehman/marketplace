@@ -16,7 +16,7 @@ const RelatedProducts = () => {
     <Fragment>
       {ProductList.map((product) => {
         return (
-          <div className="col-md-6 col-lg-4 g-5">
+          <div className="col-md-6 col-lg-4 g-md-5 my-3">
             <Link to="/productDetail/1" className="cardLink">
               <div class="card">
                 <div className="imgWrapper">

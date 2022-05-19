@@ -1,7 +1,11 @@
 .navbar {
   background-color: #26272e;
   border-bottom: 2px solid gray;
-  padding: 18px 10px !important;
+  /* padding: 18px 10px !important; */
+  padding: 18px 0 !important;
+}
+.navbar-brand {
+  margin-right: 0 !important;
 }
 .logo {
   color: white !important;
@@ -19,6 +23,7 @@
   border-radius: 16px;
   padding-left: 30px;
   max-width: 200px;
+  max-width: 100px !important;
   background-color: #363943;
   border: 2px solid transparent;
   color: #fff;
@@ -36,7 +41,7 @@
 }
 
 .notificationButton {
-  margin-left: 100px;
+  /* margin-left: 100px; */
   width: 40px;
   height: 40px;
   background-color: #363943 !important;
@@ -44,11 +49,13 @@
 }
 .ConnectWalletDiv {
   position: relative;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  margin-left: 10px !important;
 }
 .ConnectWalletButton {
   background-color: #363943 !important;
-  min-width: 246px;
+  /* min-width: 246px; */
+  min-width: 200px;
   border-radius: 20px !important;
 
   min-height: 45px;
@@ -71,6 +78,8 @@
 .ProfileButton {
   border-radius: 50% !important;
   padding: unset !important;
+  height: 40px;
+  width: 40px;
 }
 .ProfileImage {
   width: 40px;
@@ -80,11 +89,42 @@
 .navbBarDropDown .dropdown-toggle {
   color: white !important;
 }
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .headerSearch input {
+    min-width: 260px;
+  }
+}
+
 @media (min-width: 992px) {
   .headerSearch {
-    margin-left: 100px;
+    margin-left: 30px;
+  }
+  .notificationButton {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .headerSearch {
+    margin-left: 200px;
   }
   .headerSearch input {
     min-width: 400px;
   }
+  .notificationButton {
+    margin-left: 200px;
+  }
+  .navbar {
+    padding: 18px 60px !important;
+  }
+  .ConnectWalletButton {
+    min-width: 250px;
+  }
+  .ConnectWalletDiv {
+    margin-left: 30px !important;
+  }
+
+}
+@media (min-width: 1400px) {
 }

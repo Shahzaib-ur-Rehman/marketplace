@@ -6,15 +6,24 @@ import Copy from "../images/copy.png";
 import arrowUp from "../images/arrow_up.png";
 import vectorIcon from "../images/Vector.png";
 import Chart from "./Chart";
-import ProductList from "./ProductList";
+import { useNavigate } from "react-router-dom";
 import RelatedProducts from "./RelatedProducts";
 const ProductDetail = () => {
+  const navigate = useNavigate();
   return (
     <Container className="py-5">
       <Row>
         <Col md={6}>
           {/* <Button className="customBtn">Back</Button> */}
-          <span className="btn customBtn">Back</span>
+
+          <span
+            className="btn customBtn"
+            onClick={() => {
+              navigate(-1);
+            }}
+          >
+            Back
+          </span>
         </Col>
       </Row>
       <Row className="mt-5">
@@ -28,40 +37,40 @@ const ProductDetail = () => {
             />
           </div>
           <Row className="mt-4 mt-lg-5">
-            <h4 class="font-semibold text-white mb-3 mb-md-0">
+            <h4 className="font-semibold text-white mb-3 mb-md-0">
               Product Details
             </h4>
             <Col md={12}>
               <tbody>
                 <tr>
-                  <th class="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowrap  text-left">
+                  <th className="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowrap  text-left">
                     Name
                   </th>
-                  <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
+                  <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
                     Robolux System AIO
                   </td>
                 </tr>
                 <tr>
-                  <th class="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowraptext-left">
+                  <th className="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowraptext-left">
                     Licence Type
                   </th>
-                  <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
+                  <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
                     Machine Licence
                   </td>
                 </tr>
                 <tr>
-                  <th class="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowrap  text-left">
+                  <th className="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowrap  text-left">
                     Version
                   </th>
-                  <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
+                  <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
                     2.1 Kernel
                   </td>
                 </tr>
                 <tr>
-                  <th class="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowrap  text-left">
+                  <th className="border-t-0  align-middle border-l-0 border-r-0 text-white whitespace-nowrap  text-left">
                     Release Date
                   </th>
-                  <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
+                  <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-white whitespace-nowrap p-4">
                     16 Aug 2020
                   </td>
                 </tr>
@@ -114,21 +123,23 @@ const ProductDetail = () => {
             </div>
           </div>
           <div>
-            <div class="rounded-t mb-0  py-3 border-0">
-              <div class="flex flex-wrap items-center">
-                <div class="relative w-full  max-w-full flex-grow flex-1">
-                  <h3 class="font-semibold text-white">Product Description</h3>
+            <div className="rounded-t mb-0  py-3 border-0">
+              <div className="flex flex-wrap items-center">
+                <div className="relative w-full  max-w-full flex-grow flex-1">
+                  <h3 className="font-semibold text-white">
+                    Product Description
+                  </h3>
                 </div>
               </div>
             </div>
-            <div class="block w-full overflow-x-auto">
-              <p class="flex flex-wrap items-center border-t-0  align-middle border-l-0 border-r-0 text-white ">
+            <div className="block w-full overflow-x-auto">
+              <p className="flex flex-wrap items-center border-t-0  align-middle border-l-0 border-r-0 text-white ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
                 blandit vitae volutpat odio odio aliquam id. Maecenas pretium,
                 vel massa nunc habitasse eget mauris tristique.
               </p>
               <a>
-                <p class="flex flex-wrap items-center border-t-0  align-middle border-l-0 border-r-0  readMoreLink">
+                <p className="flex flex-wrap items-center border-t-0  align-middle border-l-0 border-r-0  readMoreLink">
                   read more
                 </p>
               </a>
@@ -143,7 +154,7 @@ const ProductDetail = () => {
       </Row> */}
 
       <Row className="mt-4 mt-md-3 mt-lg-5">
-        <h4 class="font-semibold text-white mb-3 mb-md-4 mb-lg-5">
+        <h4 className="font-semibold text-white mb-3 mb-md-4 mb-lg-5">
           Product Description
         </h4>
         <Col md={12} className="graphStyling">
@@ -151,7 +162,7 @@ const ProductDetail = () => {
         </Col>
       </Row>
       <Row className="mt-4 mt-lg-5">
-        <h4 class="font-semibold text-white mb-3">RELATED PRODUCTS</h4>
+        <h4 className="font-semibold text-white mb-3">RELATED PRODUCTS</h4>
         <Col md={12}>
           <Row>
             {" "}

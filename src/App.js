@@ -16,6 +16,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Bot1" element={<Home />} />
+          <Route path="/Bot2" element={<Home />} />
+          <Route path="/Bot3" element={<Home />} />
+          <Route path="/Bot4" element={<Home />} />
+          <Route path="/Bot5" element={<Home />} />
           <Route path="/addNewProduct" element={<AddNewProduct />} />
           <Route path="/productDetail/:ProductId" element={<ProductDetail />} />
         </Routes>

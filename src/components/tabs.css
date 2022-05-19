@@ -5,16 +5,24 @@
   background-color: #4d5058;
   border-radius: 10px;
   padding: 10px 20px !important;
+  align-items: center;
 }
-.tabs .nav-link {
+.tabs .nav-item {
+  padding: 0px 10px;
+}
+.tabs .navLink {
   color: #fff;
   font-weight: 500;
+  text-decoration: none !important;
   border-bottom: 2px solid transparent !important;
 }
-.tabs .nav-link:hover {
+.tabs .navLink:hover {
   border-bottom: 2px solid #ffbe6a !important;
   color: #fff;
   border-radius: unset;
+}
+.newProductBtn .btn-primary:hover {
+  border-bottom: unset !important;
 }
 /* .sectionMain .row:nth-child(1) .col {
   padding: 0 !important;

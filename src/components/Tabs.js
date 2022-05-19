@@ -7,19 +7,29 @@ const Tabs = () => {
   return (
     <Nav variant="pills" className="tabs">
       <Nav.Item>
-        <Nav.Link href="/home">Bot1</Nav.Link>
+        <Link to="/Bot1" className="navLink">
+          Bot1
+        </Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Bot2</Nav.Link>
+        <Link to="/Bot2" className="navLink">
+          Bot2
+        </Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Bot3</Nav.Link>
+        <Link to="/Bot3" className="navLink">
+          Bot3
+        </Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Bot4</Nav.Link>
+        <Link to="/Bot4" className="navLink">
+          Bot4
+        </Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Bot5</Nav.Link>
+        <Link to="/Bot5" className="navLink">
+          Bot5
+        </Link>
       </Nav.Item>
       <Link to="/addNewProduct" className="newProductBtn">
         <Button variant="primary" className="">

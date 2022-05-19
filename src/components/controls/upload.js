@@ -34,29 +34,45 @@ const Upload = (props) => {
             </FormGroup>
 
             {preview ? (
-              <img
-                className="img-preview"
-                src={preview}
-                style={{ objectFit: "cover" }}
-                onClick={() => {
-                  const imageFile = document.getElementById(name);
-                  imageFile.value = "";
-                  setImage();
-                  setPreview();
-                }}
-                width={150}
-                height={150}
-              />
+              <div className="filewrapper">
+                <button
+                  className="uploadBtn margin-end-3"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    const imageFile = document.getElementById(name);
+                    imageFile.value = "";
+                    setImage();
+                    setPreview();
+                  }}
+                >
+                  <div className="f-s-12">Remove File</div>
+                </button>
+                <img
+                  className="img-preview py-3"
+                  src={preview}
+                  style={{ objectFit: "cover" }}
+                  onClick={() => {
+                    const imageFile = document.getElementById(name);
+                    imageFile.value = "";
+                    setImage();
+                    setPreview();
+                  }}
+                  width={100}
+                  height={100}
+                />
+              </div>
             ) : (
-              <button
-                className="uploadBtn margin-end-3"
-                onClick={(event) => {
-                  event.preventDefault();
-                  fileInputRef.current.click();
-                }}
-              >
-                <div className="f-s-12">Choose File</div>
-              </button>
+              <div className="filewrapper">
+                <button
+                  className="uploadBtn margin-end-3 "
+                  onClick={(event) => {
+                    event.preventDefault();
+                    fileInputRef.current.click();
+                  }}
+                >
+                  <div className="f-s-12">Choose File</div>
+                </button>
+              </div>
             )}
             <input
               type="file"

@@ -6,10 +6,10 @@ import ProductList from "./ProductList";
 
 const Home = () => {
   return (
-    <section class="sectionMain">
+    <section className="sectionMain">
       <Container fluid="lg" className="my-3">
         <Row>
-          <Col class="px-0">
+          <Col className="px-0">
             <Tabs />
           </Col>
         </Row>

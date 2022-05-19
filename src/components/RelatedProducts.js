@@ -18,7 +18,7 @@ const RelatedProducts = () => {
         return (
           <div className="col-md-6 col-lg-4 g-md-5 my-3">
             <Link to="/productDetail/1" className="cardLink">
-              <div class="card">
+              <div className="card">
                 <div className="imgWrapper">
                   <Card.Img
                     variant="top"
@@ -27,8 +27,8 @@ const RelatedProducts = () => {
                     width={350}
                   />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">{product.title}</h5>
+                <div className="card-body">
+                  <h5 className="card-title">{product.title}</h5>
                 </div>
               </div>
             </Link>

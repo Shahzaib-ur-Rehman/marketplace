@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <Navbar bg="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#" className="logo ">
+        <Navbar.Brand href="/" className="logo ">
           LOGO
         </Navbar.Brand>
         <Form className=" headerSearch ">

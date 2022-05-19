@@ -18,7 +18,7 @@ const ProductList = () => {
         return (
           <div className="col-md-6 col-lg-4 g-md-5 my-3">
             <Link to="/productDetail/1" className="cardLink">
-              <div class="card">
+              <div className="card">
                 <div className="imgWrapper">
                   <Card.Img
                     variant="top"
@@ -27,12 +27,12 @@ const ProductList = () => {
                     width={350}
                   />
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">{product.title}</h5>
-                  <p class="card-text">{product.description}</p>
-                  <div class="productType">
+                <div className="card-body">
+                  <h5 className="card-title">{product.title}</h5>
+                  <p className="card-text">{product.description}</p>
+                  <div className="productType">
                     <span className="smallProductType">Hot Sell</span>
-                    <span class="btnGo">Go SomeWhere</span>
+                    <span className="btnGo">Go SomeWhere</span>
                   </div>
                 </div>
               </div>
